@@ -29,6 +29,8 @@ adventurer.roll(4)
 /////////////////////////// Part 2 //////////////////////////////////
 
 class Character {
+    static MAX_HEALTH = 100;
+
     constructor(name, health, inventory, roll) {
         this.name = name
         this.health = health
@@ -52,6 +54,8 @@ robin.companion.companion.inventory = ["small hat", "sunglasses"];
 
 
 class Adventurer extends Character {
+    static role = [Fighter, Healer, Wizard];
+
     constructor (name, role, stamina, skills) {
       super(name);
       // Adventurers have specialized roles.
@@ -60,6 +64,13 @@ class Adventurer extends Character {
       this.inventory.push("bedroll", "50 gold coins");
       this.stamina = stamina;
       this.skills = skills;
+      if(role === 'fighter'|| role ==='healer'|| role === 'wizard'){
+        console.log('role is succesful');
+      }else{
+        console.log('role is not valid');
+        
+      }
+
     }
     // Adventurers have the ability to scout ahead of them.
     scout () {
@@ -98,10 +109,10 @@ class Adventurer extends Character {
   }
 
 //   change the declaration of Robin and the companions to use the new Adventurer and Companion classes.
-const robin = new Adventurer('Robin');
+// const robin = new Adventurer('Robin');
 robin.adventurer.stamina = (80);
 robin.adventurer.skills = (77);
-const robin = new Companion('Robin');
+// const robin = new Companion('Robin');
 robin.companion.name = ('Robin');
 robin.companion.type = ('Person');
 const leo = new Companion('Leo');
@@ -110,4 +121,7 @@ leo.companion.type = ('Cat');
 const frank =  new Companion('Frank');
 frank.companion.name = ('Frank');
 frank.companion.type = ('Flea');
+
+//////////////////////// Part 4 //////////////////////////////////////////////
+
 
