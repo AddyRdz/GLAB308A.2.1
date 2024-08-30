@@ -109,13 +109,13 @@ const updatedFrank = new Adventurer ("Frank", "Flea");
 // Part 4: Class Uniforms //////////////////////////
 
 // Part 6: Developing Skills ////////////////////////////
- duel(){
-}if(this.health && newThis.health >= 50){
-  console.log(`${this.name} has a  health level of:${this.health} .`)
-}else{
-  adventurer.roll(){
-    continue;
-  }
-}
- } if(this.health < 50){
-  console.log('Winner');
+//  duel(){
+// }if(this.health && newThis.health >= 50){
+//   console.log(`${this.name} has a  health level of:${this.health} .`)
+// }else{
+//   adventurer.roll(){
+//     continue;
+//   }
+// }
+//  } if(this.health < 50){
+//   console.log('Winner');
