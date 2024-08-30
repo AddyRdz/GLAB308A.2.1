@@ -79,6 +79,17 @@ class Adventurer extends Character {
     console.log(`${this.name} is scouting ahead...`);
     super.roll();
   }
+  duel (){
+//     Use the roll() functionality to create opposing rolls for each adventurer.
+// Subtract 1 from the adventurer with the lower roll.
+// Log the results of this “round” of the duel, including the rolls and current health values.
+// Repeat this process until one of the two adventurers reaches 50 health.
+// Log the winner of the duel: the adventurer still above 50 health.
+  
+  
+  
+    
+  }
 }
 
 class Companion{
@@ -96,3 +107,15 @@ const updatedLeo = new Adventurer ("Leo", "Cat");
 const updatedFrank = new Adventurer ("Frank", "Flea");
 
 // Part 4: Class Uniforms //////////////////////////
+
+// Part 6: Developing Skills ////////////////////////////
+ duel(){
+}if(this.health && newThis.health >= 50){
+  console.log(`${this.name} has a  health level of:${this.health} .`)
+}else{
+  adventurer.roll(){
+    continue;
+  }
+}
+ } if(this.health < 50){
+  console.log('Winner');
